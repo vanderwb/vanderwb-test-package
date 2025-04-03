@@ -1,13 +1,14 @@
 # Setuptools version required for PEP 639
 [build-system]
 requires = [
-    "setuptools >= 77.0"
+    "setuptools >= 77.0",
+    "setuptools-scm>=8",
 ]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "vanderwb-test-package"
-version = "0.0.1"
+dynamic = [ "version" ]
 authors = [
   { name="Brian Vanderwende", email="vanderwb@ucar.edu" },
 ]
@@ -24,3 +25,5 @@ license-files = ["LICENSE"]
 [project.urls]
 homepage = "https://github.com/vanderwb/vanderwb-test-package"
 issues = "https://github.com/vanderwb/vanderwb-test-package/issues"
+
+[tool.setuptools_scm]
