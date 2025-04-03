@@ -1,0 +1,26 @@
+# Setuptools version required for PEP 639
+[build-system]
+requires = [
+    "setuptools >= 77.0"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vanderwb-test-package"
+version = "0.0.1"
+authors = [
+  { name="Brian Vanderwende", email="vanderwb@ucar.edu" },
+]
+description = "A package for tesing packaging"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+
+license = "MIT"
+license-files = ["LICENSE"]
+
+[project.urls]
+homepage = "https://github.com/vanderwb/vanderwb-test-package"
+issues = "https://github.com/vanderwb/vanderwb-test-package/issues"
